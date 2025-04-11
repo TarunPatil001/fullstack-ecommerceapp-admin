@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --font-family: "Assistant", serif; */
+  --font-family: "Inter", "Inter Fallback";
+  --letter-spacing: 0px;
+  --bg-primary: rgb(56, 114, 250);
+  --bg-primary-light: rgb(214, 226, 253);
+  --bg-hover-primary: rgb(242, 246, 255);
+  --bg-light-hover: rgb(241, 241, 241);
+  --bg-primary-update: rgb(11, 169, 0);
+  --bg-primary-update-light: rgb(204, 255, 201);
+  --bg-active: rgb(233, 243, 255);
+  --text-active: var(--bg-primary);
+  --text-light: #82848b;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-family) !important;
+}
+
+
+body {
+  font-optical-sizing: auto !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: rgba(96, 96, 96, 0.1) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+
+.customScroll::-webkit-scrollbar {
+  width: 3px !important;
+  height: 3px !important;
+  border-radius: 6px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+  box-shadow: rgba(96, 96, 96, 0.1) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+  border-radius: 15px;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3) !important;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.custom-btn {
+  background-color: var(--bg-primary) !important;
+  color: #ffffff !important;
+  padding: 5px 20px !important;
+}
+
+.custom-btn-disabled {
+  background-color: var(--bg-primary-light) !important;
+  color: #ffffff !important;
+  padding: 5px 20px !important;
+}
+
+.custom-btn-update {
+  background-color: var(--bg-primary-update) !important;
+  color: #ffffff !important;
+  padding: 5px 20px !important;
+}
+
+.custom-btn-update-disabled {
+  background-color: var(--bg-primary-update-light) !important;
+  color: #ffffff !important;
+  padding: 5px 20px !important;
+}
+
+/* ---------------Button Circular  ---------------------- */
+.MuiCircularProgress-root {
+  width: 26px !important;
+  height: 26px !important;
+}
+
+
+/* --------- ProductDetails ----------- */
+
+.iiz {
+  border-radius: 6px;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+
+.iiz div {
+  height: inherit !important;
+  /* background: white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iiz div .iiz__img {
+  /* Use the correct class */
+  height: inherit !important;
+  width: auto;
+  object-fit: contain !important;
+}
+
+.iiz__zoom-img--visible {
+  cursor: crosshair !important;
+}
+
+.productDetailImageOptions {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+/* Fix buttons inside the container */
+.productDetailImageOptions .swiper-button-prev,
+.productDetailImageOptions .swiper-button-next {
+  position: absolute !important;
+  background: var(--bg-primary) !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  z-index: 10 !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+}
+
+/* Place the prev button at the top */
+.productDetailImageOptions .swiper-button-prev {
+  top: 0 !important;
+  bottom: inherit !important;
+  width: 100% !important;
+  height: 30px !important;
+  left: inherit !important;
+}
+
+/* Place the next button at the bottom */
+.productDetailImageOptions .swiper-button-next {
+  bottom: 0 !important;
+  top: inherit !important;
+  width: 100% !important;
+  height: 30px !important;
+  right: inherit !important;
+}
+
+.productDetailImageOptions .swiper-button-prev::after {
+  transform: rotate(90deg);
+  color: #fff !important;
+  font-size: 18px !important;
+}
+
+.productDetailImageOptions .swiper-button-next::after {
+  transform: rotate(90deg);
+  color: #fff !important;
+  font-size: 18px !important;
+}
+
+
+.MuiBadge-badge {
+  background: var(--bg-primary) !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+.MuiPaginationItem-root.Mui-selected {
+  background: var(--bg-primary) !important;
+  color: #ffffff;
+}
+
+th.MuiTableCell-root {
+  @apply bg-gray-100 font-bold py-1
+}
+
+a.active button {
+  /* background: rgba(56, 114, 250, 0.1) !important; */
+  background: var(--bg-primary) !important;
+}
+
+.custom-credential-btn {
+  background: #ffffff !important;
+  border: 2px solid rgba(0, 0, 0, 0.4) !important;
+}
+
+.css-rizt0-MuiTypography-root {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background: #f1f1f1 !important;
+  color: black !important;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.MuiSelect-select {
+  background: #fff !important;
+}
+
+.custom-shadow {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  height: 100%;
+  width: 100%;
+}
+
+.css-1ygil4i-MuiToolbar-root {
+  min-height: 56px !important;
+}
+
+.MuiSelect-select {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.custom-dropdown {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.css-16yb58i-MuiButtonBase-root-MuiChip-root .MuiChip-deleteIcon {
+  color: #ffffff !important;
+}
+
+.otpBox input {
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline: none !important;
+  border-radius: 4px;
+}
+
+.otpBox input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+
+.MuiTableBody-root tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+  width: 100%;
+  height: 40px !important;
+  border-radius: 0px 6px 6px 0px !important;
+  font-size: 16px !important;
+  -webkit-border-radius: 0px 6px 6px 0px !important;
+  -moz-border-radius: 0px 6px 6px 0px !important;
+  -ms-border-radius: 0px 6px 6px 0px !important;
+  -o-border-radius: 0px 6px 6px 0px !important;
+}
+
+.react-international-phone-input-container .react-international-phone-country-selector-button {
+  padding: 0px 5px !important;
+  height: 40px !important;
+  border-radius: 6px 0px 0px 6px !important;
+  -webkit-border-radius: 6px 0px 0px 6px !important;
+  -moz-border-radius: 6px 0px 0px 6px !important;
+  -ms-border-radius: 6px 0px 0px 6px !important;
+  -o-border-radius: 6px 0px 0px 6px !important;
+}
+
+
+.separator {
+  display: inline-block;
+  margin: 0 2px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 200;
+}
+
+.separator::before {
+  content: "|";
+  margin: 0 10px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 25px !important;
+  font-weight: bold;
+  color: #000;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: var(--bg-primary) !important;
+  opacity: 1;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  display: none !important;
+}
+
+.rsw-toolbar {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0px 10px;
+  gap: 15px;
+}
+
+.rsw-toolbar::-webkit-scrollbar {
+  width: 3px !important;
+  height: 3px !important;
+  border-radius: 6px;
+}
+
+.rsw-toolbar::-webkit-scrollbar-track {
+  box-shadow: rgba(96, 96, 96, 0.1) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.1) 0px 18px 36px -18px inset;
+  border-radius: 15px;
+}
+
+.rsw-toolbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3) !important;
+  cursor: pointer;
+  border-radius: 15px;
+}

@@ -1,0 +1,80 @@
+@media only screen and (min-width:320px) and (max-width:992px) {
+
+    /* html,
+    body {
+        overflow-x: hidden;
+    } */
+
+    .dashBoardFilters {
+        display: block !important;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .dashBoardFilters .col {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 300px;
+        padding-right: 25px;
+    }
+
+    /* scroll-disabled */
+    body.scroll-disabled {
+        position: fixed;
+        width: 100%;
+        overflow-y: scroll;
+    }
+
+    /* Fix buttons inside the container */
+    .productDetailImageOptions .swiper-button-prev,
+    .productDetailImageOptions .swiper-button-next {
+        position: absolute !important;
+        background: var(--bg-primary) !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        z-index: 10 !important;
+        border-radius: 0px !important;
+        -webkit-border-radius: 0px !important;
+        -moz-border-radius: 0px !important;
+        -ms-border-radius: 0px !important;
+        -o-border-radius: 0px !important;
+    }
+
+    /* Place the prev button at the top */
+    .productDetailImageOptions .swiper-button-prev {
+        left: 0 !important;
+        right: inherit !important;
+        width: 30px !important;
+        height: 100% !important;
+        top: inherit !important;
+    }
+
+    /* Place the next button at the bottom */
+    .productDetailImageOptions .swiper-button-next {
+        right: 0 !important;
+        left: inherit !important;
+        width: 30px !important;
+        height: 100% !important;
+        bottom: inherit !important;
+    }
+
+    .productDetailImageOptions .swiper-button-prev::after {
+        transform: rotate(0deg);
+        color: #fff !important;
+        font-size: 18px !important;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    .productDetailImageOptions .swiper-button-next::after {
+        transform: rotate(0deg);
+        color: #fff !important;
+        font-size: 18px !important;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
